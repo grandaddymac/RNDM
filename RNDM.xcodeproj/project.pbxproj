@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84267E069E6152024AA08681 /* Pods_RNDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB13330403D6F0971B44BB3 /* Pods_RNDM.framework */; };
 		D81C2E6921CDBE630071E040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E6821CDBE630071E040 /* AppDelegate.swift */; };
-		D81C2E6B21CDBE630071E040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E6A21CDBE630071E040 /* ViewController.swift */; };
+		D81C2E6B21CDBE630071E040 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E6A21CDBE630071E040 /* MainVC.swift */; };
 		D81C2E6E21CDBE630071E040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81C2E6C21CDBE630071E040 /* Main.storyboard */; };
 		D81C2E7021CDBE660071E040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81C2E6F21CDBE660071E040 /* Assets.xcassets */; };
 		D81C2E7321CDBE660071E040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81C2E7121CDBE660071E040 /* LaunchScreen.storyboard */; };
+		D81C2E7B21CDBF310071E040 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D81C2E7A21CDBF310071E040 /* GoogleService-Info.plist */; };
+		D81C2E7D21CDC83D0071E040 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E7C21CDC83D0071E040 /* AddThoughtVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		368B5AB947D4ED3C24DE348C /* Pods-RNDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.debug.xcconfig"; sourceTree = "<group>"; };
+		535A0F4FFE2B153E003C071C /* Pods-RNDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.release.xcconfig"; sourceTree = "<group>"; };
+		ACB13330403D6F0971B44BB3 /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81C2E6521CDBE630071E040 /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81C2E6821CDBE630071E040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D81C2E6A21CDBE630071E040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D81C2E6A21CDBE630071E040 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D81C2E6D21CDBE630071E040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D81C2E6F21CDBE660071E040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D81C2E7221CDBE660071E040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D81C2E7421CDBE660071E040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D81C2E7A21CDBF310071E040 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D81C2E7C21CDC83D0071E040 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84267E069E6152024AA08681 /* Pods_RNDM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25E64073ED9615530578C6CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB13330403D6F0971B44BB3 /* Pods_RNDM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D81C2E5C21CDBE630071E040 = {
 			isa = PBXGroup;
 			children = (
 				D81C2E6721CDBE630071E040 /* RNDM */,
 				D81C2E6621CDBE630071E040 /* Products */,
+				FF074397FFDCF8F5AE51834E /* Pods */,
+				25E64073ED9615530578C6CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,49 @@
 		D81C2E6721CDBE630071E040 /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				D81C2E8021CDC85D0071E040 /* Model */,
+				D81C2E7F21CDC8510071E040 /* View */,
+				D81C2E7E21CDC8490071E040 /* Controller */,
 				D81C2E6821CDBE630071E040 /* AppDelegate.swift */,
-				D81C2E6A21CDBE630071E040 /* ViewController.swift */,
 				D81C2E6C21CDBE630071E040 /* Main.storyboard */,
 				D81C2E6F21CDBE660071E040 /* Assets.xcassets */,
 				D81C2E7121CDBE660071E040 /* LaunchScreen.storyboard */,
 				D81C2E7421CDBE660071E040 /* Info.plist */,
+				D81C2E7A21CDBF310071E040 /* GoogleService-Info.plist */,
 			);
 			path = RNDM;
+			sourceTree = "<group>";
+		};
+		D81C2E7E21CDC8490071E040 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D81C2E6A21CDBE630071E040 /* MainVC.swift */,
+				D81C2E7C21CDC83D0071E040 /* AddThoughtVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D81C2E7F21CDC8510071E040 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D81C2E8021CDC85D0071E040 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF074397FFDCF8F5AE51834E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				368B5AB947D4ED3C24DE348C /* Pods-RNDM.debug.xcconfig */,
+				535A0F4FFE2B153E003C071C /* Pods-RNDM.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D81C2E7721CDBE660071E040 /* Build configuration list for PBXNativeTarget "RNDM" */;
 			buildPhases = (
+				2CBABAA315B32C19DFD94508 /* [CP] Check Pods Manifest.lock */,
 				D81C2E6121CDBE630071E040 /* Sources */,
 				D81C2E6221CDBE630071E040 /* Frameworks */,
 				D81C2E6321CDBE630071E040 /* Resources */,
+				B7AC165A0F6D27FAC3A44E77 /* [CP] Embed Pods Frameworks */,
+				0A5D27C57FE3F247F4BA209F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D81C2E7321CDBE660071E040 /* LaunchScreen.storyboard in Resources */,
+				D81C2E7B21CDBF310071E040 /* GoogleService-Info.plist in Resources */,
 				D81C2E7021CDBE660071E040 /* Assets.xcassets in Resources */,
 				D81C2E6E21CDBE630071E040 /* Main.storyboard in Resources */,
 			);
@@ -130,12 +188,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A5D27C57FE3F247F4BA209F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CBABAA315B32C19DFD94508 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNDM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AC165A0F6D27FAC3A44E77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D81C2E6121CDBE630071E040 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81C2E6B21CDBE630071E040 /* ViewController.swift in Sources */,
+				D81C2E7D21CDC83D0071E040 /* AddThoughtVC.swift in Sources */,
+				D81C2E6B21CDBE630071E040 /* MainVC.swift in Sources */,
 				D81C2E6921CDBE630071E040 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +420,7 @@
 		};
 		D81C2E7821CDBE660071E040 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368B5AB947D4ED3C24DE348C /* Pods-RNDM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,12 +433,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.grandaddymac.RNDM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D81C2E7921CDBE660071E040 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535A0F4FFE2B153E003C071C /* Pods-RNDM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.grandaddymac.RNDM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
