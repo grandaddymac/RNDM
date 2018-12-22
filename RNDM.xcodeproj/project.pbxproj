@@ -16,6 +16,8 @@
 		D81C2E7B21CDBF310071E040 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D81C2E7A21CDBF310071E040 /* GoogleService-Info.plist */; };
 		D81C2E7D21CDC83D0071E040 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E7C21CDC83D0071E040 /* AddThoughtVC.swift */; };
 		D81C2E8321CDD3CB0071E040 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E8221CDD3CB0071E040 /* Constants.swift */; };
+		D8A0E42521CE95A200DF5173 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E42421CE95A200DF5173 /* Thought.swift */; };
+		D8A0E42721CE976F00DF5173 /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E42621CE976F00DF5173 /* ThoughtCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D81C2E7A21CDBF310071E040 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D81C2E7C21CDC83D0071E040 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
 		D81C2E8221CDD3CB0071E040 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D8A0E42421CE95A200DF5173 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		D8A0E42621CE976F00DF5173 /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		D81C2E7F21CDC8510071E040 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D8A0E42621CE976F00DF5173 /* ThoughtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 		D81C2E8021CDC85D0071E040 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D8A0E42421CE95A200DF5173 /* Thought.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,7 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D81C2E7D21CDC83D0071E040 /* AddThoughtVC.swift in Sources */,
+				D8A0E42521CE95A200DF5173 /* Thought.swift in Sources */,
 				D81C2E6B21CDBE630071E040 /* MainVC.swift in Sources */,
+				D8A0E42721CE976F00DF5173 /* ThoughtCell.swift in Sources */,
 				D81C2E6921CDBE630071E040 /* AppDelegate.swift in Sources */,
 				D81C2E8321CDD3CB0071E040 /* Constants.swift in Sources */,
 			);
