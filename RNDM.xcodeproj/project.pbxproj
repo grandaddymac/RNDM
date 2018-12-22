@@ -15,6 +15,7 @@
 		D81C2E7321CDBE660071E040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81C2E7121CDBE660071E040 /* LaunchScreen.storyboard */; };
 		D81C2E7B21CDBF310071E040 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D81C2E7A21CDBF310071E040 /* GoogleService-Info.plist */; };
 		D81C2E7D21CDC83D0071E040 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E7C21CDC83D0071E040 /* AddThoughtVC.swift */; };
+		D81C2E8321CDD3CB0071E040 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E8221CDD3CB0071E040 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D81C2E7421CDBE660071E040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D81C2E7A21CDBF310071E040 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D81C2E7C21CDC83D0071E040 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
+		D81C2E8221CDD3CB0071E040 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		D81C2E6721CDBE630071E040 /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				D81C2E8121CDD3B90071E040 /* Utilities */,
 				D81C2E8021CDC85D0071E040 /* Model */,
 				D81C2E7F21CDC8510071E040 /* View */,
 				D81C2E7E21CDC8490071E040 /* Controller */,
@@ -107,6 +110,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D81C2E8121CDD3B90071E040 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D81C2E8221CDD3CB0071E040 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		FF074397FFDCF8F5AE51834E /* Pods */ = {
@@ -277,6 +288,7 @@
 				D81C2E7D21CDC83D0071E040 /* AddThoughtVC.swift in Sources */,
 				D81C2E6B21CDBE630071E040 /* MainVC.swift in Sources */,
 				D81C2E6921CDBE630071E040 /* AppDelegate.swift in Sources */,
+				D81C2E8321CDD3CB0071E040 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
