@@ -25,7 +25,9 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     //Variables
     private var thoughts = [Thought]()
     private var thoughtsCollectionRef: CollectionReference!
-    
+    private var thoughtsListener: ListenerRegistration!
+    private var selectedCategory = ThoughtCategory.funny.rawValue
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -37,10 +39,38 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        thoughtsCollectionRef.getDocuments { (snapshot, error) in
+        setListener()
+    }
+    
+    
+    @IBAction func categoryChanged(_ sender: Any) {
+        switch segmentControl.selectedSegmentIndex {
+        case 0:
+            selectedCategory = ThoughtCategory.funny.rawValue
+        case 1:
+            selectedCategory = ThoughtCategory.serious.rawValue
+        case 2:
+            selectedCategory = ThoughtCategory.crazy.rawValue
+        default:
+            selectedCategory = ThoughtCategory.popular.rawValue
+        }
+        thoughtsListener.remove()
+        setListener()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        thoughtsListener.remove()
+    }
+    
+    func setListener() {
+        thoughtsListener = thoughtsCollectionRef
+            .whereField(CATEGORY, isEqualTo: selectedCategory)
+            .order(by: TIMESTAMP, descending: true)
+            .addSnapshotListener  { (snapshot, error) in
             if let err = error {
                 debugPrint("Error fetching docs: \(err)")
             } else {
+                self.thoughts.removeAll()
                 guard let snap = snapshot else { return }
                 for document in snap.documents {
                     let data = document.data()
