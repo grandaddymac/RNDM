@@ -13,7 +13,7 @@
         <!--LoginVC-->
         <scene sceneID="Bh0-oP-4Da">
             <objects>
-                <viewController id="SSL-bz-CDh" customClass="LoginVC" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="SSL-bz-CDh" customClass="LoginVC" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HQ5-sB-bZa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="createUserTapped:" destination="SSL-bz-CDh" eventType="touchUpInside" id="P65-Nd-gK0"/>
+                                    <segue destination="3IC-bn-fv9" kind="show" id="Hyq-dX-vJh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -313,6 +313,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="RNDM" id="MAh-Xa-rIV">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="h1n-w2-13l">
+                            <connections>
+                                <action selector="logoutTapped:" destination="BYZ-38-t0r" id="7ly-ce-uCN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="addThoughtIcon" id="6zA-d6-GF1">
                             <connections>
                                 <segue destination="FDC-rf-iEA" kind="show" id="Z12-sD-KWN"/>
