@@ -18,6 +18,8 @@
 		D81C2E8321CDD3CB0071E040 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C2E8221CDD3CB0071E040 /* Constants.swift */; };
 		D8A0E42521CE95A200DF5173 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E42421CE95A200DF5173 /* Thought.swift */; };
 		D8A0E42721CE976F00DF5173 /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E42621CE976F00DF5173 /* ThoughtCell.swift */; };
+		D8A0E42921D4524800DF5173 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E42821D4524800DF5173 /* LoginVC.swift */; };
+		D8A0E42B21D4567B00DF5173 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E42A21D4567B00DF5173 /* CreateUserVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D81C2E8221CDD3CB0071E040 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D8A0E42421CE95A200DF5173 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		D8A0E42621CE976F00DF5173 /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
+		D8A0E42821D4524800DF5173 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D8A0E42A21D4567B00DF5173 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				D81C2E6A21CDBE630071E040 /* MainVC.swift */,
 				D81C2E7C21CDC83D0071E040 /* AddThoughtVC.swift */,
+				D8A0E42821D4524800DF5173 /* LoginVC.swift */,
+				D8A0E42A21D4567B00DF5173 /* CreateUserVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,7 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D81C2E7D21CDC83D0071E040 /* AddThoughtVC.swift in Sources */,
+				D8A0E42B21D4567B00DF5173 /* CreateUserVC.swift in Sources */,
 				D8A0E42521CE95A200DF5173 /* Thought.swift in Sources */,
+				D8A0E42921D4524800DF5173 /* LoginVC.swift in Sources */,
 				D81C2E6B21CDBE630071E040 /* MainVC.swift in Sources */,
 				D8A0E42721CE976F00DF5173 /* ThoughtCell.swift in Sources */,
 				D81C2E6921CDBE630071E040 /* AppDelegate.swift in Sources */,
