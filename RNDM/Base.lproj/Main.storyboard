@@ -356,12 +356,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L5Q-N9-dz0">
-                                <rect key="frame" x="0.0" y="64" width="375" height="524"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L5Q-N9-dz0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="85" id="Zpa-vE-Fi1" customClass="CommentCell" customModule="RNDM" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="85" id="Zpa-vE-Fi1" customClass="CommentCell" customModule="RNDM" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zpa-vE-Fi1" id="TFO-8z-IA9">
@@ -436,8 +435,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="L5Q-N9-dz0" firstAttribute="trailing" secondItem="Ntv-YS-N6R" secondAttribute="trailing" id="D1l-ve-c3O"/>
+                            <constraint firstItem="QLX-J5-Gcd" firstAttribute="top" secondItem="L5Q-N9-dz0" secondAttribute="bottom" id="Hzh-ix-kTd"/>
                             <constraint firstItem="QLX-J5-Gcd" firstAttribute="bottom" secondItem="Ntv-YS-N6R" secondAttribute="bottom" id="JvK-8H-Ysm"/>
+                            <constraint firstItem="L5Q-N9-dz0" firstAttribute="leading" secondItem="Ntv-YS-N6R" secondAttribute="leading" id="Tsl-9R-TWA"/>
                             <constraint firstItem="QLX-J5-Gcd" firstAttribute="leading" secondItem="Ntv-YS-N6R" secondAttribute="leading" id="Yq3-dH-bgv"/>
+                            <constraint firstItem="L5Q-N9-dz0" firstAttribute="top" secondItem="Ntv-YS-N6R" secondAttribute="top" id="ceY-WB-dvp"/>
                             <constraint firstItem="QLX-J5-Gcd" firstAttribute="trailing" secondItem="Ntv-YS-N6R" secondAttribute="trailing" id="uk7-YL-SXu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ntv-YS-N6R"/>

@@ -16,13 +16,16 @@ class CommentCell: UITableViewCell {
     @IBOutlet weak var timestampText: UILabel!
     @IBOutlet weak var commentText: UILabel!
     
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
+    func configureCell(comment: Comment) {
+        usernameText.text = comment.username
+        commentText.text = comment.commentTxt
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, hh:mm"
+        let timestamp = formatter.string(from: comment.timestamp)
+        timestampText.text = timestamp
+    }
    
 
 }
