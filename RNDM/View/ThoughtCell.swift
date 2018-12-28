@@ -18,6 +18,7 @@ class ThoughtCell: UITableViewCell {
     @IBOutlet weak var likesImage: UIImageView!
     @IBOutlet weak var likesNumLbl: UILabel!
     
+    @IBOutlet weak var commentsNumLabel: UILabel!
     //Variables
     
     private var thought: Thought!
@@ -44,6 +45,7 @@ class ThoughtCell: UITableViewCell {
         //timestampLbl.text = thought.timestamp
         thoughtTxtLbl.text = thought.thoughtTxt
         likesNumLbl.text = String(thought.numLikes)
+        commentsNumLabel.text = String(thought.numComments)
         
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d, hh:mm"

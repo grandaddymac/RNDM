@@ -131,6 +131,18 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toComments", sender: thoughts[indexPath.row])
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toComments" {
+            if let destinationVC = segue.destination as? CommentsVC {
+                if let thought = sender as? Thought {
+                    destinationVC.thought = thought
+                }
+            }
+        }
+    }
 }
 
