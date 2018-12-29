@@ -21,4 +21,5 @@ let TIMESTAMP = "timestamp"
 let USERNAME = "username"
 let DATE_CREATED = "dateCreated"
 let COMMENT_TEXT = "commentText"
+let USER_ID = "userId"
 

@@ -10,7 +10,13 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class CommentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CommentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, CommentDelegate {
+    
+    func commentOptionsTapped(comment: Comment) {
+        // add alert
+        print(comment.username)
+    }
+    
    
     //Outlets
     @IBOutlet weak var tableView: UITableView!
@@ -81,7 +87,8 @@ class CommentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             transaction.setData([
                 COMMENT_TEXT : commentText,
                 TIMESTAMP : FieldValue.serverTimestamp(),
-                USERNAME : self.username
+                USERNAME : self.username,
+                USER_ID : Auth.auth().currentUser?.uid ?? ""
                 ], forDocument: newCommentRef)
             
             return nil
@@ -104,7 +111,7 @@ class CommentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? CommentCell {
             
-            cell.configureCell(comment: comments[indexPath.row])
+            cell.configureCell(comment: comments[indexPath.row], delegate: self)
             return cell
         }
         return UITableViewCell()

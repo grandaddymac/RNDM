@@ -287,6 +287,9 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="optionsImageDark" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzL-X2-aZI">
+                                                    <rect key="frame" x="316" y="8" width="30" height="30"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="BRR-Nv-v2m" firstAttribute="leading" secondItem="2Ce-Hz-3NU" secondAttribute="leadingMargin" id="0Kv-Nz-NdR"/>
@@ -294,18 +297,21 @@
                                                 <constraint firstItem="29R-1G-e6f" firstAttribute="leading" secondItem="BRR-Nv-v2m" secondAttribute="trailing" constant="8" id="4fK-Vd-bxW"/>
                                                 <constraint firstItem="29R-1G-e6f" firstAttribute="centerY" secondItem="BRR-Nv-v2m" secondAttribute="centerY" id="BkC-6p-m3g"/>
                                                 <constraint firstItem="iRT-mk-tcW" firstAttribute="leading" secondItem="2Ce-Hz-3NU" secondAttribute="leadingMargin" id="Fet-vy-TMY"/>
+                                                <constraint firstItem="yzL-X2-aZI" firstAttribute="centerY" secondItem="29R-1G-e6f" secondAttribute="centerY" id="Hi3-b5-6DI"/>
                                                 <constraint firstItem="BRR-Nv-v2m" firstAttribute="top" secondItem="2Ce-Hz-3NU" secondAttribute="topMargin" id="OT8-S4-gnH"/>
                                                 <constraint firstItem="eIY-zp-TMh" firstAttribute="top" secondItem="BRR-Nv-v2m" secondAttribute="bottom" constant="8" id="QAF-F9-4aM"/>
                                                 <constraint firstItem="iRT-mk-tcW" firstAttribute="top" secondItem="eIY-zp-TMh" secondAttribute="bottom" constant="4" id="b8O-dY-HTW"/>
                                                 <constraint firstItem="iRT-mk-tcW" firstAttribute="top" secondItem="eIY-zp-TMh" secondAttribute="bottom" constant="4" id="gFC-KW-Jf4"/>
                                                 <constraint firstItem="eIY-zp-TMh" firstAttribute="leading" secondItem="2Ce-Hz-3NU" secondAttribute="leadingMargin" id="mxN-st-sKd"/>
                                                 <constraint firstAttribute="bottom" secondItem="iRT-mk-tcW" secondAttribute="bottom" constant="3" id="qBx-HJ-GbV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yzL-X2-aZI" secondAttribute="trailing" constant="14" id="u7c-Mi-6dE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentsNumLabel" destination="f8H-1X-M6y" id="vDC-0w-loF"/>
                                             <outlet property="likesImage" destination="kGX-5S-wte" id="QmL-ZK-cIi"/>
                                             <outlet property="likesNumLbl" destination="kKN-2r-vH0" id="6QM-pX-9Kg"/>
+                                            <outlet property="optionsMenu" destination="yzL-X2-aZI" id="QeJ-Sp-esx"/>
                                             <outlet property="thoughtTxtLbl" destination="eIY-zp-TMh" id="HSr-uf-JGT"/>
                                             <outlet property="timestampLbl" destination="29R-1G-e6f" id="wlM-lM-d1p"/>
                                             <outlet property="usernameLbl" destination="BRR-Nv-v2m" id="OPH-3j-LSj"/>
@@ -373,18 +379,21 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a random thought" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMs-49-vsF">
-                                                    <rect key="frame" x="15" y="53" width="345" height="14"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec 22, 10:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geI-K1-z9R">
                                                     <rect key="frame" x="100.5" y="22.5" width="76.5" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a random thought" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMs-49-vsF">
+                                                    <rect key="frame" x="15" y="53" width="345" height="14"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="optionsImageDark" translatesAutoresizingMaskIntoConstraints="NO" id="mz2-nr-0f3">
+                                                    <rect key="frame" x="316" y="16" width="30" height="30"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="faK-5f-5AQ" firstAttribute="leading" secondItem="TFO-8z-IA9" secondAttribute="leadingMargin" id="0Ri-Ue-O4D"/>
@@ -392,6 +401,8 @@
                                                 <constraint firstItem="uMs-49-vsF" firstAttribute="leading" secondItem="TFO-8z-IA9" secondAttribute="leadingMargin" id="R8J-hJ-gZO"/>
                                                 <constraint firstItem="uMs-49-vsF" firstAttribute="trailing" secondItem="TFO-8z-IA9" secondAttribute="trailingMargin" id="VnY-0v-f3v"/>
                                                 <constraint firstItem="uMs-49-vsF" firstAttribute="top" secondItem="faK-5f-5AQ" secondAttribute="bottom" constant="10.5" id="XYR-uA-vj3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mz2-nr-0f3" secondAttribute="trailing" constant="14" id="ax7-Ow-Tz8"/>
+                                                <constraint firstItem="mz2-nr-0f3" firstAttribute="centerY" secondItem="geI-K1-z9R" secondAttribute="centerY" id="p9b-95-2Di"/>
                                                 <constraint firstItem="faK-5f-5AQ" firstAttribute="top" secondItem="TFO-8z-IA9" secondAttribute="topMargin" constant="8" id="pq8-kf-Uav"/>
                                                 <constraint firstItem="faK-5f-5AQ" firstAttribute="centerY" secondItem="geI-K1-z9R" secondAttribute="centerY" id="vCY-y3-aij"/>
                                                 <constraint firstItem="geI-K1-z9R" firstAttribute="leading" secondItem="faK-5f-5AQ" secondAttribute="trailing" constant="8" id="z2j-wc-w8h"/>
@@ -399,6 +410,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentText" destination="uMs-49-vsF" id="Zxz-zm-A2B"/>
+                                            <outlet property="optionsMenu" destination="mz2-nr-0f3" id="TZE-h0-9U8"/>
                                             <outlet property="timestampText" destination="geI-K1-z9R" id="pUJ-Ja-pxk"/>
                                             <outlet property="usernameText" destination="faK-5f-5AQ" id="yvs-eG-59P"/>
                                         </connections>
@@ -564,6 +576,7 @@
     <resources>
         <image name="addThoughtIcon" width="21" height="24"/>
         <image name="commentIcon" width="26" height="22"/>
+        <image name="optionsImageDark" width="30" height="30"/>
         <image name="starIconFilled" width="20" height="19"/>
     </resources>
 </document>
