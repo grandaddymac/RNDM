@@ -24,6 +24,7 @@
 		D8A0E42F21D5A6C600DF5173 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E42E21D5A6C600DF5173 /* CommentCell.swift */; };
 		D8A0E43121D5A8BF00DF5173 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E43021D5A8BF00DF5173 /* Comment.swift */; };
 		D8A0E43321D6B1C400DF5173 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E43221D6B1C400DF5173 /* KeyboardBoundView.swift */; };
+		D8A0E43521D7DA5700DF5173 /* UpdateCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0E43421D7DA5700DF5173 /* UpdateCommentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D8A0E42E21D5A6C600DF5173 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		D8A0E43021D5A8BF00DF5173 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		D8A0E43221D6B1C400DF5173 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		D8A0E43421D7DA5700DF5173 /* UpdateCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				D8A0E42821D4524800DF5173 /* LoginVC.swift */,
 				D8A0E42A21D4567B00DF5173 /* CreateUserVC.swift */,
 				D8A0E42C21D5A2A600DF5173 /* CommentsVC.swift */,
+				D8A0E43421D7DA5700DF5173 /* UpdateCommentVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				D8A0E42B21D4567B00DF5173 /* CreateUserVC.swift in Sources */,
 				D8A0E43321D6B1C400DF5173 /* KeyboardBoundView.swift in Sources */,
 				D8A0E42521CE95A200DF5173 /* Thought.swift in Sources */,
+				D8A0E43521D7DA5700DF5173 /* UpdateCommentVC.swift in Sources */,
 				D8A0E42921D4524800DF5173 /* LoginVC.swift in Sources */,
 				D81C2E6B21CDBE630071E040 /* MainVC.swift in Sources */,
 				D8A0E42F21D5A6C600DF5173 /* CommentCell.swift in Sources */,

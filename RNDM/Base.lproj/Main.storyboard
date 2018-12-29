@@ -434,7 +434,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="kka-ux-5f6" firstAttribute="leading" secondItem="QLX-J5-Gcd" secondAttribute="leading" constant="20" id="4bC-IY-rSb"/>
                                     <constraint firstItem="tfe-6p-jRB" firstAttribute="centerY" secondItem="QLX-J5-Gcd" secondAttribute="centerY" id="G6O-v4-DyC"/>
@@ -449,7 +449,7 @@
                         <constraints>
                             <constraint firstItem="L5Q-N9-dz0" firstAttribute="trailing" secondItem="Ntv-YS-N6R" secondAttribute="trailing" id="D1l-ve-c3O"/>
                             <constraint firstItem="QLX-J5-Gcd" firstAttribute="top" secondItem="L5Q-N9-dz0" secondAttribute="bottom" id="Hzh-ix-kTd"/>
-                            <constraint firstItem="QLX-J5-Gcd" firstAttribute="bottom" secondItem="Ntv-YS-N6R" secondAttribute="bottom" id="JvK-8H-Ysm"/>
+                            <constraint firstItem="QLX-J5-Gcd" firstAttribute="bottom" secondItem="8fc-Ca-1fC" secondAttribute="bottom" id="JvK-8H-Ysm"/>
                             <constraint firstItem="L5Q-N9-dz0" firstAttribute="leading" secondItem="Ntv-YS-N6R" secondAttribute="leading" id="Tsl-9R-TWA"/>
                             <constraint firstItem="QLX-J5-Gcd" firstAttribute="leading" secondItem="Ntv-YS-N6R" secondAttribute="leading" id="Yq3-dH-bgv"/>
                             <constraint firstItem="L5Q-N9-dz0" firstAttribute="top" secondItem="Ntv-YS-N6R" secondAttribute="top" id="ceY-WB-dvp"/>
@@ -461,11 +461,64 @@
                         <outlet property="addCommentText" destination="kka-ux-5f6" id="9kv-h3-4YR"/>
                         <outlet property="keyboardView" destination="QLX-J5-Gcd" id="J7X-sH-Amv"/>
                         <outlet property="tableView" destination="L5Q-N9-dz0" id="8YS-vq-lly"/>
+                        <segue destination="zUG-Nc-gov" kind="show" identifier="toEditComment" id="cQc-aX-Cey"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lv0-yu-dMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1964" y="-189.3553223388306"/>
+        </scene>
+        <!--Update CommentVC-->
+        <scene sceneID="O86-mD-Q7y">
+            <objects>
+                <viewController id="zUG-Nc-gov" customClass="UpdateCommentVC" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JIi-pg-zCm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OaJ-SM-FHC">
+                                <rect key="frame" x="20" y="84" width="335" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.20178724315068494" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ulQ-Ga-HJA"/>
+                                </constraints>
+                                <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl2-z8-52m">
+                                <rect key="frame" x="125" y="250" width="125" height="40"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DTn-SG-gr7"/>
+                                    <constraint firstAttribute="width" constant="125" id="gpe-RP-Y3l"/>
+                                </constraints>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateTapped:" destination="zUG-Nc-gov" eventType="touchUpInside" id="OkR-tW-nJK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jl2-z8-52m" firstAttribute="centerX" secondItem="JIi-pg-zCm" secondAttribute="centerX" id="BXW-Gg-pD0"/>
+                            <constraint firstItem="rdj-P5-euG" firstAttribute="trailing" secondItem="OaJ-SM-FHC" secondAttribute="trailing" constant="20" id="DHl-5A-ax5"/>
+                            <constraint firstItem="OaJ-SM-FHC" firstAttribute="top" secondItem="rdj-P5-euG" secondAttribute="top" constant="20" id="PVj-LU-8ze"/>
+                            <constraint firstItem="jl2-z8-52m" firstAttribute="top" secondItem="OaJ-SM-FHC" secondAttribute="bottom" constant="16" id="syh-02-Deg"/>
+                            <constraint firstItem="OaJ-SM-FHC" firstAttribute="leading" secondItem="rdj-P5-euG" secondAttribute="leading" constant="20" id="tw2-Dw-JBD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rdj-P5-euG"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentText" destination="OaJ-SM-FHC" id="s7g-nj-TNA"/>
+                        <outlet property="updateButton" destination="jl2-z8-52m" id="5LS-xJ-sjf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9v-6j-xyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2672.8000000000002" y="-186.65667166416793"/>
         </scene>
         <!--Add ThoughtVC-->
         <scene sceneID="Fwe-EI-6B0">
